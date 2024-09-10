@@ -14,20 +14,13 @@ const Earth: React.FC<EarthProps> = ({ scene }) => {
     const material = new THREE.MeshStandardMaterial({ map: earthTexture });
     const earth = new THREE.Mesh(geometry, material);
     
-    earth.position.set(-20, 10, 10); // Positioning
+    earth.position.set(6, -6, 17); // Positioning
 
     scene.add(earth);
 
-    // //Create the Ring
-    // const ringGeometry = new THREE.TorusGeometry(12, 0.5, 2, 100);  // Adjusted torus for flatter, thinner ring
-    // const ringMaterial = new THREE.MeshStandardMaterial({ color: 0xFF6347 });
-    // const saturnRing = new THREE.Mesh(ringGeometry, ringMaterial);
-    
-    // saturnRing.position.set(20, 10, 0)
-    // saturnRing.rotation.x = Math.PI / 2; // Rotate the ring to be flat
-
-    // scene.add(saturnRing)
-
+    //Moon
+    const moonTexture = new THREE.TextureLoader().load('./src/assets/moon.jpg')
+    const moonGeometry = new THREE.SphereGeometry()
 
     // Cleanup: Remove the box from the scene when component is unmounted
     return () => {

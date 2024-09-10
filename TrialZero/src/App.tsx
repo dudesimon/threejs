@@ -42,14 +42,14 @@ const App: React.FC = () => {
     // scene.add(sun)
     // Saturn
     //Create the Ring
-    const ringGeometry = new THREE.TorusGeometry(5, 0.5, 2, 100);  // Adjusted torus for flatter, thinner ring
-    const ringMaterial = new THREE.MeshStandardMaterial({ color: 0xFF6347 });
-    const saturnRing = new THREE.Mesh(ringGeometry, ringMaterial);
+    // const ringGeometry = new THREE.TorusGeometry(5, 0.5, 2, 100);  // Adjusted torus for flatter, thinner ring
+    // const ringMaterial = new THREE.MeshStandardMaterial({ color: 0xFF6347 });
+    // const saturnRing = new THREE.Mesh(ringGeometry, ringMaterial);
     
-    saturnRing.position.set(20, 10, 0)
-    saturnRing.rotation.x = Math.PI / 2; // Rotate the ring to be flat
+    // saturnRing.position.set(20, 10, 0)
+    // saturnRing.rotation.x = Math.PI / 2; // Rotate the ring to be flat
 
-    scene.add(saturnRing)
+    // scene.add(saturnRing)
 
     // scene.add(torus);
 
